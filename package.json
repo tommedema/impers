@@ -19,6 +19,7 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "prepare": "npm run build",
     "gen:ffi-consts": "node scripts/generate-ffi-constants.js",
     "lint": "eslint .",
     "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
